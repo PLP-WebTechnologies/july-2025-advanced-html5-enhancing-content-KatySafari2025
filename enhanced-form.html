@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced form</title>
+    <style>
+        body{
+            background-color: black;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Enhanced HTML5 Form</h1>
+        <p>This page demostrates a well-structured HTML document with lists, tables, media and a complete HTML5 form.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Features of this form</h2>
+            <ul>
+                <li>Well-structured layout using semantic HTML tags</li>
+                <li>HTML form validation</li>
+                <li>Various input types and attributes</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Personal Data</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Katy</td>
+                        <td>19</td>
+                        <td>Kenya</td>
+                    </tr>
+                    <tr>
+                        <td>Kibet</td>
+                        <td>19</td>
+                        <td>Kenya</td>
+                    </tr>
+                    <tr>
+                        <td>Brown</td>
+                        <td>25</td>
+                        <td>Canada</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Sample Media</h2>
+            <img src="girl.jpg" alt="My girl">
+        </section>
+
+        <section>
+            <h2>Registration Form</h2>
+            <form action="" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="enter your name" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="enter your email" required>
+                <br><br>
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g +254712345678" required>
+                <br><br>
+                <label for="dob">Date of birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                <br><br>
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender" required>
+                    <option value="">--Select--</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <br><br>
+                <label for="about">Tell Us About Yourself:</label>
+                <textarea name="about" id="about" placeholder="Write something here..." required></textarea>
+                <br><br>
+                <label>
+                    <input type="checkbox" name="terms" required> I agree to Terms & Conditions
+                </label>
+                <br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Enhanced Form Example</p>
+    </footer>
+</body>
+</html>
